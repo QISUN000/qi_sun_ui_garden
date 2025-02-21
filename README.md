@@ -1,46 +1,160 @@
-# Getting Started with Create React App
+# UI Component Library
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React component library created with Create React App and Storybook, featuring reusable UI components.
 
-## Available Scripts
+## Prerequisites
 
-In the project directory, you can run:
+- Docker installed on your machine
+- Git (optional, for cloning)
 
-### `npm start`
+## Project Structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
+qi_sun_ui_garden/
+├── src/
+│   ├── components/
+│   │   ├── Button/
+│   │   ├── Label/
+│   │   ├── Text/
+│   │   ├── Table/
+│   │   ├── Dropdown/
+│   │   ├── RadioButton/
+│   │   ├── Image/
+│   │   ├── HeroImage/
+│   │   └── Card/
+├── .storybook/
+├── package.json
+├── Dockerfile
+└── README.md
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Running with Docker
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Navigate to the project directory:
+```bash
+cd qi_sun_ui_garden
+```
 
-### `npm run build`
+2. Build the Docker container:
+```bash
+docker build -t qi_sun_coding_assignment12 .
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Run the container:
+```bash
+docker run -d -p 8083:8083 --name qi_sun_coding_assignment12 qi_sun_coding_assignment12
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Access the application:
+- Main application: http://localhost:8083
+- Storybook: http://localhost:8083/storybook
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Development Setup
 
-### `npm run eject`
+If you want to run the application locally without Docker:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. Install dependencies:
+```bash
+npm install
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Start the development server:
+```bash
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+3. Run Storybook:
+```bash
+npm run storybook
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Components
 
-## Learn More
+Each component in the library includes:
+- TypeScript implementation
+- Storybook stories with controls
+- Type definitions
+- Unit tests
+- Responsive design
+- Styled-components based styling
+- Default and disabled states
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Available Components:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. **Button**
+   - Primary and secondary variants
+   - Disabled state
+   - Customizable background color
+
+2. **Label**
+   - Form label component
+   - Optional required indicator
+
+3. **Text**
+   - Various text styles
+   - Responsive font sizing
+
+4. **Table**
+   - Table header
+   - Table row
+   - Table cell
+   - Table footer
+   - Responsive design
+
+5. **Dropdown**
+   - Custom styled select
+   - Multiple options support
+
+6. **Radio Button**
+   - Custom styled radio inputs
+   - Group functionality
+
+7. **Image**
+   - Responsive image component
+   - Lazy loading
+
+8. **Hero Image**
+   - Full-width banner image
+   - Optional overlay text
+
+9. **Card**
+   - Content container
+   - Header, body, footer sections
+
+## Testing
+
+Run unit tests:
+```bash
+npm test
+```
+
+## Building
+
+Create a production build:
+```bash
+npm run build
+```
+
+Build Storybook:
+```bash
+npm run build-storybook
+```
+
+## Docker Commands
+
+Stop the container:
+```bash
+docker stop qi_sun_coding_assignment12
+```
+
+Remove the container:
+```bash
+docker rm qi_sun_coding_assignment12
+```
+
+Remove the image:
+```bash
+docker rmi qi_sun_coding_assignment12
+```
