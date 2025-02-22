@@ -48,8 +48,7 @@ docker run -d -p 8083:8083 --name qi_sun_coding_assignment12 qi_sun_coding_assig
 ```
 
 4. Access the application:
-- Main application: http://localhost:8083
-- Storybook: http://localhost:8083/storybook
+- Storybook: http://localhost:8083
 
 ### Development Setup
 
