@@ -1,0 +1,12 @@
+"use strict";(self.webpackChunkqi_sun_ui_garden=self.webpackChunkqi_sun_ui_garden||[]).push([[15],{"./src/components/Img/Img.stories.tsx":(__unused_webpack_module,__webpack_exports__,__webpack_require__)=>{__webpack_require__.r(__webpack_exports__),__webpack_require__.d(__webpack_exports__,{Default:()=>Default,Disabled:()=>Disabled,__namedExportsOrder:()=>__namedExportsOrder,default:()=>Img_stories});__webpack_require__("./node_modules/react/index.js");var styled_components_browser_esm=__webpack_require__("./node_modules/styled-components/dist/styled-components.browser.esm.js"),jsx_runtime=__webpack_require__("./node_modules/react/jsx-runtime.js");const StyledImg=styled_components_browser_esm.Ay.img`
+  max-width: 100%;
+  height: auto;
+  opacity: ${p=>p.disabled?.6:1};
+  cursor: ${p=>p.disabled?"not-allowed":"pointer"};
+  transition: opacity 0.2s;
+
+  &:hover:not(:disabled) {
+    opacity: 0.8;
+  }
+`,Img=_ref=>{let{src,alt,disabled,onClick}=_ref;return(0,jsx_runtime.jsx)(StyledImg,{src,alt,disabled,onClick:disabled?void 0:onClick})};Img.__docgenInfo={description:"",methods:[],displayName:"Img",props:{src:{required:!0,tsType:{name:"string"},description:""},alt:{required:!0,tsType:{name:"string"},description:""},disabled:{required:!1,tsType:{name:"boolean"},description:""},onClick:{required:!1,tsType:{name:"signature",type:"function",raw:"() => void",signature:{arguments:[],return:{name:"void"}}},description:""}}};const Img_stories={component:Img,title:"Components/Img",argTypes:{disabled:{control:"boolean"},onClick:{action:"clicked"}}},Default={args:{src:"https://miro.medium.com/v2/resize:fit:1400/1*GI-td9gs8D5OKZd19mAOqA.png",alt:"Placeholder Image",disabled:!1}},Disabled={args:{src:"https://miro.medium.com/v2/resize:fit:1400/1*GI-td9gs8D5OKZd19mAOqA.png",alt:"Placeholder Image",disabled:!0}},__namedExportsOrder=["Default","Disabled"];Default.parameters={...Default.parameters,docs:{...Default.parameters?.docs,source:{originalSource:"{\n  args: {\n    src: 'https://miro.medium.com/v2/resize:fit:1400/1*GI-td9gs8D5OKZd19mAOqA.png',\n    alt: 'Placeholder Image',\n    disabled: false\n  }\n}",...Default.parameters?.docs?.source}}},Disabled.parameters={...Disabled.parameters,docs:{...Disabled.parameters?.docs,source:{originalSource:"{\n  args: {\n    src: 'https://miro.medium.com/v2/resize:fit:1400/1*GI-td9gs8D5OKZd19mAOqA.png',\n    alt: 'Placeholder Image',\n    disabled: true\n  }\n}",...Disabled.parameters?.docs?.source}}}}}]);
+//# sourceMappingURL=components-Img-Img-stories.b078015f.iframe.bundle.js.map

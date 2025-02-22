@@ -13,4 +13,4 @@ RUN npm run build-storybook
 
 EXPOSE 8083
 
-CMD ["npm", "start"]
+CMD ["npx", "storybook", "dev", "--ci", "-p", "8083"]
