@@ -39,7 +39,18 @@ const TableCell = styled.td`
   border: 1px solid #E5E7EB;
 `;
 
-export const Table = ({ headers, rows, disabled = false }: TableProps) => {
+const TableFooter = styled.tfoot`
+  background-color: #E5E7EB;
+  font-weight: 500;
+`;
+
+const TableFooterCell = styled.td`
+  padding: 1rem;
+  border: 1px solid #E5E7EB;
+  text-align: left;
+`;
+
+export const Table = ({ headers, rows, disabled = false, footer }: TableProps) => {
   return (
     <TableContainer disabled={disabled} data-testid="table">
       <TableHeader>
@@ -58,6 +69,17 @@ export const Table = ({ headers, rows, disabled = false }: TableProps) => {
           </TableRow>
         ))}
       </tbody>
+      {footer && (
+        <TableFooter>
+          <tr>
+            {footer.map((cell, index) => (
+              <TableFooterCell key={index} colSpan={index === 0 && footer.length === 1 ? headers.length : 1}>
+                {cell}
+              </TableFooterCell>
+            ))}
+          </tr>
+        </TableFooter>
+      )}
     </TableContainer>
   );
 };

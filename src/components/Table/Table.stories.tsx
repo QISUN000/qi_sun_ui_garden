@@ -16,6 +16,7 @@ const mockRows = [
   ['Bob Johnson', '35', 'Chicago'],
   ['Alice Brown', '28', 'San Francisco'],
 ];
+const mockFooter = ['Total: 4 entries'];
 
 export const Default: Story = {
   args: {
@@ -24,11 +25,36 @@ export const Default: Story = {
   },
 };
 
+export const WithFooter: Story = {
+  args: {
+    headers: mockHeaders,
+    rows: mockRows,
+    footer: mockFooter,
+  },
+};
+
+export const WithDetailedFooter: Story = {
+  args: {
+    headers: mockHeaders,
+    rows: mockRows,
+    footer: ['Total', '4 entries', 'Last updated: Today'],
+  },
+};
+
 export const Disabled: Story = {
   args: {
     headers: mockHeaders,
     rows: mockRows,
     disabled: true,
+  },
+};
+
+export const DisabledWithFooter: Story = {
+  args: {
+    headers: mockHeaders,
+    rows: mockRows,
+    disabled: true,
+    footer: mockFooter,
   },
 };
 
