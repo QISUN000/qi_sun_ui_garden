@@ -1,6 +1,3 @@
-I apologize for the confusion. Let me provide the README in a proper format that you can directly copy and paste:
-
-```markdown
 # UI Component Library with Code Quality Checks
 
 A React component library created with Create React App and Storybook, featuring reusable UI components and code quality checks.
