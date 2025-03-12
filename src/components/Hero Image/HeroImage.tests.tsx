@@ -44,7 +44,6 @@ describe('HeroImage', () => {
     const { container } = render(<HeroImage {...defaultProps} disabled />);
 
     const heroContainer = container.firstChild as HTMLElement;
-    const styles = window.getComputedStyle(heroContainer);
 
     expect(heroContainer).toHaveStyle({
       opacity: '0.6',
