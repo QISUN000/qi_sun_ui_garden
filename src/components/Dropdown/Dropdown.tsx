@@ -13,7 +13,7 @@ const DropdownContainer = styled.div<{ $disabled?: boolean }>`
   border-radius: 4px;
 
   &:hover:not(:disabled) {
-    background: ${'#2563EB'}; 
+    background: ${'#2563EB'};
   }
 `;
 
@@ -63,8 +63,8 @@ export const Dropdown = ({ options, disabled, onSelect }: DropdownProps) => {
       Select an option
       <DropdownList $isOpen={isOpen}>
         {options.map((option, index) => (
-          <DropdownItem 
-            key={index} 
+          <DropdownItem
+            key={index}
             onClick={(e) => {
               e.stopPropagation();
               handleSelect(option);

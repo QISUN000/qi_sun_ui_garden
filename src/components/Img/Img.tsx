@@ -16,11 +16,6 @@ const StyledImg = styled.img<{ disabled?: boolean }>`
 
 export const Img = ({ src, alt, disabled, onClick }: ImgProps) => {
   return (
-    <StyledImg
-      src={src}
-      alt={alt}
-      disabled={disabled}
-      onClick={!disabled ? onClick : undefined}
-    />
+    <StyledImg src={src} alt={alt} disabled={disabled} onClick={!disabled ? onClick : undefined} />
   );
 };

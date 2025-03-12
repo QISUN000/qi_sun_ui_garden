@@ -12,21 +12,20 @@ type Story = StoryObj<typeof Text>;
 export const Default: Story = {
   args: {
     children: 'Default Text',
-    variant: 'body'
+    variant: 'body',
   },
 };
 
 export const Disabled: Story = {
   args: {
     children: 'Disabled Text',
-    disabled: true
+    disabled: true,
   },
 };
 
 export const Heading1: Story = {
   args: {
     children: 'Heading 1',
-    variant: 'h1'
+    variant: 'h1',
   },
 };
-

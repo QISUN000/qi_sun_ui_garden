@@ -24,7 +24,11 @@ const HeroImageContent = styled.div`
 
 export const HeroImage = ({ imageUrl, title, subtitle, disabled, onClick }: HeroImageProps) => {
   return (
-    <HeroImageContainer imageUrl={imageUrl} disabled={disabled} onClick={!disabled ? onClick : undefined}>
+    <HeroImageContainer
+      imageUrl={imageUrl}
+      disabled={disabled}
+      onClick={!disabled ? onClick : undefined}
+    >
       <HeroImageContent>
         <h1>{title}</h1>
         <p>{subtitle}</p>

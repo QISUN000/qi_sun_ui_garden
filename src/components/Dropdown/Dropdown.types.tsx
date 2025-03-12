@@ -1,5 +1,5 @@
 export interface DropdownProps {
-    options: string[];
-    disabled?: boolean;
-    onSelect: (option: string) => void;
-  }
+  options: string[];
+  disabled?: boolean;
+  onSelect: (option: string) => void;
+}

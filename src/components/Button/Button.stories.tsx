@@ -5,9 +5,9 @@ const meta: Meta<typeof Button> = {
   component: Button,
   title: 'Components/Button',
   argTypes: {
-    backgroundColor: { control: 'color' }, 
-    disabled: { control: 'boolean' }, 
-    onClick: { action: 'clicked' }, 
+    backgroundColor: { control: 'color' },
+    disabled: { control: 'boolean' },
+    onClick: { action: 'clicked' },
   },
 };
 
@@ -17,8 +17,8 @@ type Story = StoryObj<typeof Button>;
 export const Primary: Story = {
   args: {
     children: 'Click Me',
-    backgroundColor: '#3B82F6', 
-    disabled: false, 
+    backgroundColor: '#3B82F6',
+    disabled: false,
   },
 };
 
@@ -26,6 +26,6 @@ export const Disabled: Story = {
   args: {
     children: 'Cant Click',
     disabled: true,
-    backgroundColor: '#E5E7EB', 
+    backgroundColor: '#E5E7EB',
   },
 };

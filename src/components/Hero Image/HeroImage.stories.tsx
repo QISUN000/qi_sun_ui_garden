@@ -15,7 +15,8 @@ type Story = StoryObj<typeof HeroImage>;
 
 export const Default: Story = {
   args: {
-    imageUrl: 'https://cdn.indiabioscience.org/imager/articles/411714/Aniruddha_feature-image_4b32b63c5c28c858e051e9d1a2a717a1.png',
+    imageUrl:
+      'https://cdn.indiabioscience.org/imager/articles/411714/Aniruddha_feature-image_4b32b63c5c28c858e051e9d1a2a717a1.png',
     title: 'title',
     subtitle: 'meme',
     disabled: false,
@@ -24,7 +25,8 @@ export const Default: Story = {
 
 export const Disabled: Story = {
   args: {
-    imageUrl: 'https://cdn.indiabioscience.org/imager/articles/411714/Aniruddha_feature-image_4b32b63c5c28c858e051e9d1a2a717a1.png',
+    imageUrl:
+      'https://cdn.indiabioscience.org/imager/articles/411714/Aniruddha_feature-image_4b32b63c5c28c858e051e9d1a2a717a1.png',
     title: 'title',
     subtitle: 'meme',
     disabled: true,

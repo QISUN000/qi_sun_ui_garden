@@ -22,7 +22,7 @@ const CustomRadio = styled.div<{ checked?: boolean; disabled?: boolean }>`
   align-items: center;
   justify-content: center;
   margin-right: 8px;
-  
+
   &:after {
     content: '';
     width: 10px;
@@ -37,13 +37,13 @@ const LabelText = styled.span`
   margin-left: 4px;
 `;
 
-export const RadioButton = ({ 
-  id, 
-  name, 
-  checked = false, 
-  disabled = false, 
-  onChange, 
-  label 
+export const RadioButton = ({
+  id,
+  name,
+  checked = false,
+  disabled = false,
+  onChange,
+  label,
 }: RadioButtonProps) => (
   <RadioButtonContainer disabled={disabled}>
     <HiddenInput

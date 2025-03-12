@@ -19,9 +19,7 @@ function App() {
         >
           Learn React
         </a>
-        <Button onClick={() => console.log('clicked')}>
-      Click Me
-    </Button>
+        <Button onClick={() => console.log('clicked')}>Click Me</Button>
       </header>
     </div>
   );

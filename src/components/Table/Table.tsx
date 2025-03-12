@@ -9,13 +9,13 @@ const TableContainer = styled.table<StyledTableProps>`
   width: 100%;
   border-collapse: collapse;
   margin: 1rem 0;
-  opacity: ${props => props.disabled ? 0.5 : 1};
-  pointer-events: ${props => props.disabled ? 'none' : 'auto'};
-  background-color: ${props => props.disabled ? '#F3F4F6' : 'transparent'};
+  opacity: ${(props) => (props.disabled ? 0.5 : 1)};
+  pointer-events: ${(props) => (props.disabled ? 'none' : 'auto')};
+  background-color: ${(props) => (props.disabled ? '#F3F4F6' : 'transparent')};
 `;
 
 const TableHeader = styled.thead`
-  background-color: #3B82F6;
+  background-color: #3b82f6;
   color: white;
 `;
 
@@ -26,27 +26,27 @@ const TableHeaderCell = styled.th`
 
 const TableRow = styled.tr`
   &:nth-child(even) {
-    background-color: #F3F4F6;
+    background-color: #f3f4f6;
   }
 
   &:hover {
-    background-color: #E5E7EB;
+    background-color: #e5e7eb;
   }
 `;
 
 const TableCell = styled.td`
   padding: 1rem;
-  border: 1px solid #E5E7EB;
+  border: 1px solid #e5e7eb;
 `;
 
 const TableFooter = styled.tfoot`
-  background-color: #E5E7EB;
+  background-color: #e5e7eb;
   font-weight: 500;
 `;
 
 const TableFooterCell = styled.td`
   padding: 1rem;
-  border: 1px solid #E5E7EB;
+  border: 1px solid #e5e7eb;
   text-align: left;
 `;
 
@@ -73,7 +73,10 @@ export const Table = ({ headers, rows, disabled = false, footer }: TableProps) =
         <TableFooter>
           <tr>
             {footer.map((cell, index) => (
-              <TableFooterCell key={index} colSpan={index === 0 && footer.length === 1 ? headers.length : 1}>
+              <TableFooterCell
+                key={index}
+                colSpan={index === 0 && footer.length === 1 ? headers.length : 1}
+              >
                 {cell}
               </TableFooterCell>
             ))}
