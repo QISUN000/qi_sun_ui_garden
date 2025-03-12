@@ -1,6 +1,9 @@
-# UI Component Library
+I apologize for the confusion. Let me provide the README in a proper format that you can directly copy and paste:
 
-A React component library created with Create React App and Storybook, featuring reusable UI components.
+```markdown
+# UI Component Library with Code Quality Checks
+
+A React component library created with Create React App and Storybook, featuring reusable UI components and code quality checks.
 
 ## Prerequisites
 
@@ -23,6 +26,8 @@ qi_sun_ui_garden/
 │   │   ├── HeroImage/
 │   │   └── Card/
 ├── .storybook/
+├── .github/workflows/
+├── .husky/
 ├── package.json
 ├── Dockerfile
 └── README.md
@@ -39,17 +44,16 @@ cd qi_sun_ui_garden
 
 2. Build the Docker container:
 ```bash
-docker build -t qi_sun_coding_assignment12 .
+docker build -t qi_sun_coding_assignment13 .
 ```
 
 3. Run the container:
 ```bash
-docker run -d -p 8083:8083 --name qi_sun_coding_assignment12 qi_sun_coding_assignment12
+docker run -d -p 8018:8018 --name qi_sun_coding_assignment13 qi_sun_coding_assignment13
 ```
 
 4. Access the application:
-- Main application: http://localhost:8083
-- Storybook: http://localhost:8083/storybook
+- Storybook: http://localhost:8018
 
 ### Development Setup
 
@@ -69,6 +73,27 @@ npm start
 ```bash
 npm run storybook
 ```
+
+## Code Quality Features
+
+This project implements several code quality checks that run automatically:
+
+### Pre-commit Hooks
+
+Husky is configured to run the following checks before each commit:
+- ESLint to enforce code quality rules
+- Prettier for consistent code formatting
+- Unit tests to ensure functionality
+
+### GitHub Actions
+
+The CI/CD pipeline automatically runs the same checks on all code submissions:
+- Linting with ESLint
+- Code formatting with Prettier
+- Unit testing
+- Build verification
+
+These quality checks ensure that all code meets the project standards before being merged.
 
 ## Components
 
@@ -146,15 +171,16 @@ npm run build-storybook
 
 Stop the container:
 ```bash
-docker stop qi_sun_coding_assignment12
+docker stop qi_sun_coding_assignment13
 ```
 
 Remove the container:
 ```bash
-docker rm qi_sun_coding_assignment12
+docker rm qi_sun_coding_assignment13
 ```
 
 Remove the image:
 ```bash
-docker rmi qi_sun_coding_assignment12
+docker rmi qi_sun_coding_assignment13
+```
 ```
