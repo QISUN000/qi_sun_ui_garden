@@ -1,14 +1,15 @@
 name: CI
 
+# Define when this workflow will be triggered
 on:
   push:
-    branches: [ main, master ]
+    branches: [ main ]
   pull_request:
-    branches: [ main, master ]
+    branches: [ main ]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest  # This job will run on the latest Ubuntu virtual machine
     
     steps:
     - uses: actions/checkout@v2
