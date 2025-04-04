@@ -22,9 +22,9 @@ const StyledText = styled.div<StyledTextProps & { variant: TextProps['variant'] 
   opacity: ${(props) => (props.disabled ? 0.5 : 1)};
 `;
 
-export const Text = ({ children, variant = 'body', disabled = false }: TextProps) => {
+export const Text = ({ children, variant = 'body', disabled = false, style }: TextProps) => {
   return (
-    <StyledText variant={variant} disabled={disabled} data-testid="text">
+    <StyledText variant={variant} disabled={disabled} style={style} data-testid="text">
       {children}
     </StyledText>
   );

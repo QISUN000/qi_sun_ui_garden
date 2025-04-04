@@ -20,9 +20,9 @@ const StyledCard = styled.div<{ disabled?: boolean; backgroundColor?: string }>`
   }
 `;
 
-export const Card = ({ disabled, backgroundColor, children }: CardProps) => {
+export const Card = ({ disabled, backgroundColor, children, style }: CardProps) => {
   return (
-    <StyledCard disabled={disabled} backgroundColor={backgroundColor}>
+    <StyledCard disabled={disabled} backgroundColor={backgroundColor} style={style}>
       {children}
     </StyledCard>
   );

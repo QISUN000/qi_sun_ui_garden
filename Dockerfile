@@ -1,6 +1,6 @@
 FROM node:18-alpine as build
 
-WORKDIR /qi_sun_ui_garden_build_checks
+WORKDIR /qi_sun_final_site
 
 COPY package*.json ./
 
@@ -9,8 +9,13 @@ RUN npm install
 COPY . .
 
 RUN npm run build
-RUN npm run build-storybook
 
-EXPOSE 8018
+FROM nginx:alpine
 
-CMD ["npx", "storybook", "dev", "--ci", "-p", "8018"]
+COPY --from=build /qi_sun_final_site/build /usr/share/nginx/html
+
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
+EXPOSE 5575
+
+CMD ["nginx", "-g", "daemon off;"]
