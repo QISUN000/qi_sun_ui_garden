@@ -20,7 +20,7 @@ const Home = () => {
         <Text variant="h2">About Me</Text>
         <Card>
           <Text variant="body">
-            Full Stack Developer with 7+ years' experience in the IT industry, specializing in
+            Full Stack Developer with several years' experience in the IT industry, specializing in
             developing and maintaining customer-facing web applications for enterprise clients.
             Experienced in REST API integration, microservices architecture, and Agile workflows.
             Familiar with Power Platform and eager to expand expertise in Robotic Process Automation

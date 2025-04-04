@@ -11,6 +11,8 @@ import Work from './pages/Work';
 import Skills from './pages/Skills';
 import Resources from './pages/Resources';
 import DevSetup from './pages/DevSetup';
+import NailSalonProject from './pages/NailSalonProject';
+import JobBoardProject from './pages/JobBoardProject';
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
           <Route path="/skills" element={<Skills />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/dev-setup" element={<DevSetup />} />
+          <Route path="/projects/nail-salon-booking" element={<NailSalonProject />} />
+          <Route path="/projects/job-board-platform" element={<JobBoardProject />} />
         </Routes>
       </Layout>
     </Router>

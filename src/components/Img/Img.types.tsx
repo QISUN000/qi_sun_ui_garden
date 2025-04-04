@@ -3,4 +3,5 @@ export interface ImgProps {
   alt: string;
   disabled?: boolean;
   onClick?: () => void;
+  className?: string;
 }

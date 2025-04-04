@@ -3,8 +3,10 @@ import { Card } from '../components/Card';
 import { Text } from '../components/Text';
 import { Img } from '../components/Img';
 import { Button } from '../components/Button';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Work = () => {
+  const navigate = useNavigate();
   return (
     <div className="work-page">
       <section className="section work">
@@ -82,7 +84,7 @@ const Work = () => {
                 </li>
               </ul>
             </Text>
-            <Button onClick={() => console.log('View project details')}>View Project</Button>
+            <Button onClick={() => navigate('/projects/nail-salon-booking')}>View Project</Button>
           </Card>
 
           <Card>
@@ -110,7 +112,7 @@ const Work = () => {
                 </li>
               </ul>
             </Text>
-            <Button onClick={() => console.log('View project details')}>View Project</Button>
+            <Button onClick={() => navigate('/projects/job-board-platform')}>View Project</Button>
           </Card>
         </div>
       </section>
