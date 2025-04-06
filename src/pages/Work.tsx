@@ -3,7 +3,7 @@ import { Card } from '../components/Card';
 import { Text } from '../components/Text';
 import { Img } from '../components/Img';
 import { Button } from '../components/Button';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Work = () => {
   const navigate = useNavigate();
